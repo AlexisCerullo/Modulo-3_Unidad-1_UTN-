@@ -1,0 +1,238 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+
+.color-nav {
+    background: linear-gradient(180deg, black 0%, rgb(148, 0, 0) 50%, red 100%);
+}
+
+.holder {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header,
+header a img,
+header h1,
+nav {
+    display: inline-block;
+}
+
+header a img {
+    height: 100px;
+    position: relative;
+    top: 35px;
+}
+
+header h1 {
+    color: #ddd;
+    position: relative;
+    padding: 35px 0;
+}
+
+nav {
+    margin-bottom: 20px;
+    padding-left: 10%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul a {
+    flex-grow: 1;
+    border: 3px solid black;
+    text-decoration: none;
+}
+
+.borde-izquierdo {
+    border-radius: 45px 0 0 45px;
+}
+
+.borde-derecho {
+    border-radius: 0 45px 45px 0;
+}
+
+nav ul a li {
+    min-width: 120px;
+    color: #ddd;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+
+nav ul a:hover {
+    background: radial-gradient(rgb(148, 0, 0) 0%, rgb(148, 0, 0) 50%, rgb(70, 0, 0) 100%);
+}
+
+nav ul a.activo {
+    background: radial-gradient(rgb(148, 0, 0) 0%, rgb(148, 0, 0) 50%, rgb(0, 0, 0) 100%);
+}
+
+main {
+    box-shadow: 0px 15px 5px 15px black;
+    background-color: #e6e6e6;
+}
+
+.entrada {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    height: 400px;
+    justify-content: flex-end;
+
+}
+
+.entrada:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.entrada img {
+    filter: drop-shadow(25px 5px 5px black);
+}
+
+.bastion {
+    width: auto;
+    background-image: url(../img/inicio/bastion-bg.jpg);
+}
+
+.bastion:hover {
+    background-image: url(../img/inicio/bastion-bg-low-blur.jpg);
+}
+
+.transistor {
+    width: auto;
+    background-image: url(../img/inicio/transistor-bg.jpg);
+}
+
+.transistor:hover {
+    background-image: url(../img/inicio/transistor-bg-low-blur.jpg);
+}
+
+.pyre {
+    width: auto;
+    background-image: url(../img/inicio/pyre-bg.jpg);
+}
+
+.pyre:hover {
+    background-image: url(../img/inicio/pyre-bg-low-blur.jpg);
+}
+
+.hades {
+    width: auto;
+    background-image: url(../img/inicio/hades-bg.jpg);
+}
+
+.hades:hover {
+    background-image: url(../img/inicio/hades-bg-low-blur.jpg);
+}
+
+.hades2 {
+    width: auto;
+    background-image: url(../img/inicio/hades2-bg.jpg);
+}
+
+.hades2:hover {
+    background-image: url(../img/inicio/hades2-bg-low-blur.jpg);
+}
+
+.entrada {
+    color: #d8d8d8;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.entrada p {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.contenido-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.juego {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.juego img {
+    margin: 30px;
+    height: 300px;
+}
+
+.juego .logo {
+    height: 75px;
+}
+
+.empleados {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.empleado {
+    background-color: transparent;
+    height: 400px;
+    width: 300px;
+    margin: 25px 10px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.tarjeta img {
+    border: 3px solid black;
+    border-radius: 100px;
+    width: 150px;
+
+}
+
+.frente, .reverso{
+    padding-top: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 28px;
+}
+
+.frente {
+    background-color: #afafaf;
+}
+
+.reverso {
+    transform: rotateY(180deg);
+    background-color: #a3a3a3;
+}
+
+.empleado .tarjeta:hover{
+    transform: rotateY(180deg);
+}
+
+footer {
+    background-color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+}
